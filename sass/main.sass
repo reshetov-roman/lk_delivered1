@@ -1,0 +1,1090 @@
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+*:before, *:after
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	font-weight: 400
+	overflow-x: hidden
+	margin: 0
+	height: 100vh
+	font-family: 'Roboto Serif', serif
+	
+p
+	margin: 0
+
+a
+	text-decoration: none
+	outline: none
+	display: inline-block
+	color: #000
+
+img
+	max-width: 100%
+	height: auto
+	vertical-align: bottom
+
+ul li,
+ol li
+	list-style: none
+	display: block
+	margin: 0
+
+span
+	display: inline-block
+
+ul, ol
+	display: block
+	margin: 0
+	padding-left: 0
+
+button
+	outline: none
+	border: 0
+	padding: 0
+	cursor: pointer
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	font-weight: normal
+
+strong
+	display: inline-block
+
+.site-wrap
+	overflow: hidden
+.container
+	margin: 0 auto
+	position: relative
+	padding: 0 15px
+	max-width: 1030px
+	width: 100%
+
+//ColorVariables
+$colorBg1: #FAFAFA
+$colorBg2: #fff
+$colorButton: #EFEFF0
+$colorError: #FF392E
+$colorFrame: #EBEBF0
+$colorSite: #0100D3
+$colorTxt: #C5C5C7
+$colorBlue: #2F80ED
+$colorDark: #7B828A
+$colorGreen: #30DB5B
+$colorBlack: #262626
+$colorOrange: #F15A2C
+
+
+
+.swiper-wrapper
+	align-items: center
+	user-select: none
+.swiper-slide 
+	text-align: center 
+	background: #fff 
+	display: -webkit-box 
+	display: -ms-flexbox 
+	display: -webkit-flex 
+	display: flex 
+	-webkit-box-pack: center 
+	-ms-flex-pack: center 
+	-webkit-justify-content: center 
+	justify-content: center 
+	-webkit-box-align: center 
+	-ms-flex-align: center 
+	-webkit-align-items: center 
+	align-items: center 
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled
+	display: none
+
+
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after
+	content: ''
+
+
+.swiper-button-next
+	background-color: #f3f3f3
+	background-image: url('https://simg.marwin.kz/static/version1662626232/frontend/Astrio/meloman/ru_RU/images/nav_next.svg') !important
+	background-repeat: no-repeat
+	background-position: center
+	background-size: 9px
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	right: 20px
+	top: 42%
+
+.swiper-button-prev
+	background-color: #f3f3f3
+	background-image: url('https://simg.marwin.kz/static/version1662626232/frontend/Astrio/meloman/ru_RU/images/nav_prev.svg') !important
+	background-repeat: no-repeat
+	background-position: center
+	background-size: 9px
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	top: 42%
+	left: 20px
+
+
+
+@keyframes messageVisible
+	0%
+		right: -50%
+	100%
+		right: 1%
+		background: #1d8b38
+
+.slider-list,
+.ready-slider,
+.list-accomplished
+	max-width: 777px
+	margin: auto
+	overflow: hidden
+
+.page-delivery
+	padding-left: 40px
+	&__wrp
+		animation: messageVisible .5s
+		width: 330px
+		position: fixed
+		right: 1%
+		bottom: 4%
+		transition: 1s
+		background: #35C759
+		color: #fff
+		border-radius: 10px
+		padding: 14px 10px 14px 55px
+		z-index: 10
+		&:last-child
+			margin-bottom: 0
+		&::before
+			content: url('../img/delivered/icon/vote.png')
+			position: absolute
+			left: 10px
+			top: 50%
+			transform: translateY(-38%)
+	&-title
+		font-size: 24px
+		font-weight: 500
+	&-wrapper
+		margin-top: 26px
+		&__selected-tabs
+			max-width: 500px
+			width: 100%
+		&__tabs
+			display: flex
+			background-color: $colorFrame
+			border-radius: 8px
+			color: $colorBlack
+			font-size: 14px
+			margin: 0 
+			padding: 2px
+			user-select: none
+			list-style-type: none 
+			cursor: pointer 
+		&__tab
+			flex: 1
+			text-align: center
+			cursor: pointer 
+			padding: 8px
+			transition: .3s
+			&.active
+				background-color: $colorBg2
+				border-radius: 8px
+			&:hover 
+				border-radius: 8px
+		&__main > div
+			display: none
+		.active[data-tab-content]
+			display: block
+		&__main
+			position: relative
+			overflow: hidden
+			margin-top: 20px
+			padding-top: 20px
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				width: 100%
+				height: 5px
+				background-color: $colorFrame
+				border-radius: 10px
+			&-no-prod
+				margin-left: 10%
+		&__list
+			&-item
+				overflow: hidden
+				user-select: none
+				border: 1px solid $colorFrame
+				border-radius: 8px
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+			&-header
+				display: flex
+				align-items: center
+				justify-content: space-between
+				background-color: $colorBg1
+				padding: 16px 30px 16px 20px
+				&-left
+					position: relative
+					display: flex
+					align-items: center
+					justify-content: space-between
+					max-width: 225px
+					width: 100%
+					&::before
+						content: ''
+						position: absolute
+						left: 42%
+						top: -3px
+						height: 30px
+						width: 1px
+						background-color: $colorFrame
+			&-creation
+				position: relative
+				font-size: 12px
+				color: $colorBg2
+				background-color: $colorSite
+				padding: 4px 25px 4px 10px
+				border-radius: 15px
+				&::after
+					content: url('../img/delivered/icon/icon_white_exclamatory.svg')
+					position: absolute
+					right: 10px
+					top: 5px
+			&-number-order
+				position: relative
+				font-size: 14px
+				padding-right: 22px
+				cursor: pointer
+				&::after
+					content: url('../img/delivered/icon/icon_window.svg')
+					position: absolute
+					left: 100%
+					top: 2px
+			&-number-field
+				width: 100%
+				margin-left: 40px
+				border: none
+				background: none
+			&-btn-copy
+				position: absolute
+				left: 0
+				top: 0
+				width: 112%
+				height: 100%
+				background: transparent
+				z-index: 9
+			&-minutely
+				position: relative
+				span
+					color: $colorDark
+					font-size: 14px
+					padding-right: 40px
+					cursor: pointer
+					&.addColor
+						color: #d73030
+					&::after
+						content: url('../img/delivered/icon/arrow_down.svg')
+						position: absolute
+						right: 0
+						top: 2px
+					&.rotate::after
+						transform: rotate(180deg)
+			&-shipping-number
+				display: flex
+				align-items: center
+				justify-content: space-between
+				padding: 20px 30px 30px 20px
+			&-lf
+				display: flex
+				align-items: center
+			&-number-delivery
+				font-size: 20px
+				font-weight: 500
+				margin-right: 25px
+			&-delivery-whom
+				padding: 5px 10px
+				color: $colorDark
+				background-color: $colorBg1
+				font-size: 14px
+				border-radius: 10px
+			&-cancel-delivery
+				display: none
+				font-size: 14px
+				color: $colorBlue
+				cursor: pointer
+				// &.show
+				// 	display: block
+			&-slider
+				position: relative
+				width: 100%
+				height: 100%
+				padding: 0 20px
+				// display: none
+				&-item
+					width: 50px !important
+			&-view-tile
+				display: none
+				justify-content: space-between
+				// max-height: 0
+				// overflow: hidden
+				// transition: max-height 0.3s ease-in-out
+			&-view-goods
+				width: 60%
+				border-right: 1px solid $colorFrame
+			&-view-scroll
+				overflow-y: auto
+				max-height: 600px
+				&::-webkit-scrollbar-track
+					background-color: #fff
+				&::-webkit-scrollbar-thumb 
+					border-radius: 5px 
+					background-color: #2290dab4
+				&::-webkit-scrollbar
+					width: 5px
+			&-view-rank
+				display: inline-block
+				font-size: 14px
+				padding: 20px
+				width: 100%
+				border-top: 1px solid $colorFrame
+				border-bottom: 1px solid $colorFrame
+			&-view-item
+				display: flex
+				justify-content: space-between
+				padding: 20px 20px 40px 20px
+				border-bottom: 1px solid $colorFrame
+				&:last-child
+					border-bottom: none
+				&--info
+					position: relative
+					max-width: 290px
+					width: 100%
+				&--img
+					min-width: 90px
+					max-width: 90px
+				&--title
+					font-size: 14px
+					color: $colorBlack
+				&--actions
+					position: relative
+				&--position
+					position: absolute
+					bottom: -21px
+				&--position-basket
+					position: absolute
+					bottom: -21px
+				&--discount
+					color: $colorTxt
+					font-weight: 600
+					font-size: 14px
+					text-decoration: line-through
+				&--price
+					font-size: 20px
+					margin-top: -6px
+					font-weight: 600
+				&--bonus
+					color: $colorTxt
+					font-size: 12px
+					margin-top: -1px
+					&.active-bonus
+						position: relative
+						color: $colorOrange
+						&::after
+							content: url('../img/delivered/icon/bonus.png')
+							position: absolute
+							top: 75%
+			&-view-info
+				width: 40%
+			&-view-info-content
+			&-view-info-top
+				padding: 20px
+			&-view-info-wrp
+				font-size: 14px
+				color: $colorDark
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+			&-view-info-text
+				color: $colorBlack
+				margin-left: 5px
+			&-view-info-bottom
+			&-view-info-wrp2
+				border-top: 1px solid $colorFrame
+				margin: 0 20px
+				padding: 10px 0 20px 0
+			&-view-info-bold
+				font-size: 16px
+				font-weight: 600
+				display: flex
+				align-items: center
+				justify-content: space-between
+				margin-bottom: 5px
+				&.info-bold-mt
+					margin-top: 15px
+				&:last-child
+					margin-bottom: 0
+			&-view-info-numbers
+				display: flex
+				align-items: center
+				justify-content: space-between
+				font-weight: 500
+				&.numbers--green
+					color: $colorGreen
+				span
+					font-size: 12px
+					color: $colorDark
+			&-view-info-bonus
+				color: $colorDark
+				font-size: 16px
+		&__ready
+			&-item
+				overflow: hidden
+				user-select: none
+				border: 1px solid $colorFrame
+				border-radius: 8px
+				margin-top: 20px
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+			&-view-tile
+				display: none
+				justify-content: space-between
+			&-view-goods
+				width: 60%
+				border-right: 1px solid $colorFrame
+			&-view-scroll
+				overflow-y: auto
+				max-height: 600px
+				&::-webkit-scrollbar-track 
+					background-color: #fff 
+				&::-webkit-scrollbar-thumb 
+					border-radius: 5px 
+					background-color: #2290dab4
+				&::-webkit-scrollbar 
+					width: 5px
+			&-view-rank
+				display: inline-block
+				font-size: 14px
+				padding: 20px
+				width: 100%
+				border-top: 1px solid $colorFrame
+				border-bottom: 1px solid $colorFrame
+			&-view-item
+				display: flex
+				justify-content: space-between
+				padding: 20px 20px 40px 20px
+				border-bottom: 1px solid $colorFrame
+				&:last-child
+					border-bottom: none
+				&--info
+					position: relative
+					max-width: 290px
+					width: 100%
+				&--img
+					min-width: 90px
+					max-width: 90px
+				&--title
+					font-size: 14px
+					color: $colorBlack
+				&--actions
+					position: relative
+				&--position
+					position: absolute
+					bottom: -21px
+				&--position-basket
+					position: absolute
+					bottom: -21px
+				&--discount
+					color: $colorTxt
+					font-weight: 600
+					font-size: 14px
+					text-decoration: line-through
+				&--price
+					font-size: 20px
+					margin-top: -6px
+					font-weight: 600
+				&--bonus
+					color: $colorTxt
+					font-size: 12px
+					margin-top: -1px
+					&.active-bonus
+						position: relative
+						color: $colorOrange
+						&::after
+							content: url('../img/delivered/icon/bonus.png')
+							position: absolute
+							top: 75%
+			&-view-info
+				width: 40%
+			&-view-info-content
+			&-view-info-top
+				padding: 20px
+			&-view-info-wrp
+				font-size: 14px
+				color: $colorDark
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+			&-view-info-text
+				color: $colorBlack
+				margin-left: 5px
+			&-view-info-bottom
+			&-view-info-wrp2
+				border-top: 1px solid $colorFrame
+				margin: 0 20px
+				padding: 10px 0 20px 0
+			&-view-info-bold
+				font-size: 16px
+				font-weight: 600
+				display: flex
+				align-items: center
+				justify-content: space-between
+				margin-bottom: 5px
+				&.info-bold-mt
+					margin-top: 15px
+				&:last-child
+					margin-bottom: 0
+			&-view-info-numbers
+				display: flex
+				align-items: center
+				justify-content: space-between
+				font-weight: 500
+				&.numbers--green
+					color: $colorGreen
+				span
+					font-size: 12px
+					color: $colorDark
+			&-view-info-bonus
+				color: $colorDark
+				font-size: 16px
+			&-header
+				display: flex
+				align-items: center
+				justify-content: space-between
+				background-color: $colorBg1
+				padding: 16px 30px 16px 20px
+				&-left
+					position: relative
+					display: flex
+					align-items: center
+					max-width: 455px
+					width: 100%
+					margin-right: 35px
+					&::before
+						content: ''
+						position: absolute
+						left: 70%
+						top: -3px
+						height: 30px
+						width: 1px
+						background-color: $colorFrame
+			&-creation
+				position: relative
+				font-size: 12px
+				color: $colorBg2
+				background-color: $colorSite
+				white-space: nowrap
+				padding: 4px 25px 4px 10px
+				border-radius: 15px
+				margin-right: 10px
+				&::after
+					content: url('../img/delivered/icon/icon_white_exclamatory.svg')
+					position: absolute
+					right: 10px
+					top: 5px
+			&-period-storage
+				position: relative
+				font-size: 12px
+				color: $colorBlack
+				white-space: nowrap
+				background-color: $colorFrame
+				padding: 4px 25px 4px 10px
+				margin-right: 40px
+				border-radius: 15px
+				&::after
+					content: url('../img/delivered/icon/icon_white_exclamatory.svg')
+					position: absolute
+					right: 10px
+					top: 5px
+					filter: invert(1)
+			&-number-order
+				position: relative
+				font-size: 14px
+				padding-right: 22px
+				cursor: pointer
+				&::after
+					content: url('../img/delivered/icon/icon_window.svg')
+					position: absolute
+					left: 100%
+					top: 2px
+			&-number-field
+				width: 100%
+				// margin-left: 40px
+				border: none
+				background: none
+			&-btn-copy
+				position: absolute
+				left: 0
+				top: 0
+				width: 112%
+				height: 100%
+				background: transparent
+				z-index: 9
+			&-minutely
+				position: relative
+				span
+					color: $colorDark
+					font-size: 14px
+					padding-right: 40px
+					cursor: pointer
+					&.addColor
+						color: #d73030
+					&::after
+						content: url('../img/delivered/icon/arrow_down.svg')
+						position: absolute
+						right: 0
+						top: 2px
+					&.rotate::after
+						transform: rotate(180deg)
+			&-shipping-number
+				display: flex
+				align-items: center
+				justify-content: space-between
+				padding: 20px 30px 30px 20px
+			&-lf
+				display: flex
+				align-items: center
+			&-number-delivery
+				font-size: 20px
+				font-weight: 500
+				margin-right: 25px
+			&-point-issue
+				padding: 5px 10px
+				color: $colorDark
+				background-color: $colorBg1
+				font-size: 14px
+				border-radius: 10px
+			&-period
+				display: none
+				font-size: 14px
+				color: $colorBlue
+				cursor: pointer
+				// &.show
+				// 	display: block
+			&-slider
+				position: relative
+				width: 100% 
+				height: 100%
+				padding: 0 20px
+				// display: none
+				&-item
+					width: 50px !important
+		&__list-accomplished
+			&-item
+				overflow: hidden
+				user-select: none
+				border: 1px solid $colorFrame
+				border-radius: 8px
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+			&-number-order
+				position: relative
+				font-size: 14px
+				padding-right: 22px
+				cursor: pointer
+				&::after
+					content: url('../img/delivered/icon/icon_window.svg')
+					position: absolute
+					left: 100%
+					top: 2px
+			&-number-field
+				width: 100%
+				margin-left: 40px
+				border: none
+				background: none
+			&-btn-copy
+				position: absolute
+				left: 0
+				top: 0
+				width: 112%
+				height: 100%
+				background: transparent
+				z-index: 9
+			&-header
+				display: flex
+				align-items: center
+				justify-content: space-between
+				background-color: $colorBg1
+				padding: 16px 30px 16px 20px
+				&-left
+					position: relative
+					display: flex
+					align-items: center
+					justify-content: space-between
+					max-width: 235px
+					width: 100%
+					&::before
+						content: ''
+						position: absolute
+						left: 44%
+						top: -3px
+						height: 30px
+						width: 1px
+						background-color: $colorFrame
+			&-creation
+				position: relative
+				font-size: 12px
+				color: $colorBg2
+				background-color: $colorGreen
+				padding: 4px 25px 4px 10px
+				border-radius: 15px
+				margin-right: 10px
+				&::after
+					content: url('../img/delivered/icon/checked_success.svg')
+					position: absolute
+					right: 10px
+					top: 5px
+			&-period-storage
+				position: relative
+				font-size: 12px
+				color: $colorBlack
+				background-color: $colorFrame
+				padding: 4px 25px 4px 10px
+				margin-right: 40px
+				border-radius: 15px
+				&::after
+					content: url('../img/delivered/icon/icon_white_exclamatory.svg')
+					position: absolute
+					right: 10px
+					top: 5px
+					filter: invert(1)
+			&-number-order
+				position: relative
+				font-size: 14px
+				cursor: pointer
+				padding-right: 22px
+				&::after
+					content: url('../img/delivered/icon/icon_window.svg')
+					position: absolute
+					right: 0
+					top: 2px
+			&-minutely
+				position: relative
+				span
+					color: $colorDark
+					font-size: 14px
+					padding-right: 40px
+					cursor: pointer
+					&.addColor
+						color: #d73030
+					&::after
+						content: url('../img/delivered/icon/arrow_down.svg')
+						position: absolute
+						right: 0
+						top: 2px
+					&.rotate::after
+						transform: rotate(180deg)
+			&-shipping-number
+				display: flex
+				align-items: center
+				justify-content: space-between
+				padding: 20px 30px 30px 20px
+			&-lf
+				display: flex
+				align-items: center
+			&-number-delivery
+				font-size: 20px
+				font-weight: 500
+				margin-right: 25px
+			&-delivery-whom
+				padding: 5px 10px
+				color: $colorDark
+				background-color: $colorBg1
+				font-size: 14px
+				border-radius: 10px
+			&-actions
+				display: none
+				// &.show
+				// 	display: flex
+			&-repeat-delivery,
+			&-check-delivery
+				margin-right: 36px
+				font-size: 14px
+				color: $colorBlue
+				cursor: pointer
+				&:last-child
+					margin-right: 0
+			&-slider
+				position: relative
+				width: 100% 
+				height: 100%
+				padding: 0 20px
+				// display: none
+				&-item
+					width: 50px !important
+			&-view-tile
+				display: none
+				justify-content: space-between
+			&-view-goods
+				width: 60%
+				border-right: 1px solid $colorFrame
+			&-view-scroll
+				overflow-y: auto
+				max-height: 600px
+				&::-webkit-scrollbar-track 
+					background-color: #fff 
+				&::-webkit-scrollbar-thumb 
+					border-radius: 5px 
+					background-color: #2290dab4
+				&::-webkit-scrollbar 
+					width: 5px
+			&-view-rank
+				display: inline-block
+				font-size: 14px
+				padding: 20px
+				width: 100%
+				border-top: 1px solid $colorFrame
+				border-bottom: 1px solid $colorFrame
+			&-view-item
+				display: flex
+				justify-content: space-between
+				padding: 20px 20px 40px 20px
+				border-bottom: 1px solid $colorFrame
+				&:last-child
+					border-bottom: none
+				&--info
+					position: relative
+					max-width: 290px
+					width: 100%
+				&--img
+					min-width: 90px
+					max-width: 90px
+				&--title
+					font-size: 14px
+					color: $colorBlack
+				&--actions
+					position: relative
+				&--position
+					position: absolute
+					bottom: -21px
+				&--position-basket
+					position: absolute
+					bottom: -21px
+				&--discount
+					color: $colorTxt
+					font-weight: 600
+					font-size: 14px
+					text-decoration: line-through
+				&--price
+					font-size: 20px
+					margin-top: -6px
+					font-weight: 600
+				&--bonus
+					color: $colorTxt
+					font-size: 12px
+					margin-top: -1px
+					&.active-bonus
+						position: relative
+						color: $colorOrange
+						&::after
+							content: url('../img/delivered/icon/bonus.png')
+							position: absolute
+							top: 75%
+			&-view-info
+				width: 40%
+			&-view-info-content
+			&-view-info-top
+				padding: 20px
+			&-view-info-wrp
+				font-size: 14px
+				color: $colorDark
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+			&-view-info-text
+				color: $colorBlack
+				margin-left: 5px
+			&-view-info-bottom
+			&-view-info-wrp2
+				border-top: 1px solid $colorFrame
+				margin: 0 20px
+				padding: 10px 0 20px 0
+			&-view-info-bold
+				font-size: 16px
+				font-weight: 600
+				display: flex
+				align-items: center
+				justify-content: space-between
+				margin-bottom: 5px
+				&.info-bold-mt
+					margin-top: 15px
+				&:last-child
+					margin-bottom: 0
+			&-view-info-numbers
+				display: flex
+				align-items: center
+				justify-content: space-between
+				font-weight: 500
+				&.numbers--green
+					color: $colorGreen
+				span
+					font-size: 12px
+					color: $colorDark
+			&-view-info-bonus
+				color: $colorDark
+				font-size: 16px
+
+
+.modal-window
+	position: fixed
+	z-index: 100
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -80%) scale(.9)
+	width: 520px
+	max-width: 95%
+	// min-height: 200px
+	box-shadow: 0 10px 30px rgba(#000, .2)
+	background-color: #fff
+	border-radius: 10px
+	transition: all .18s ease-in-out
+	visibility: hidden
+	opacity: 0
+	&.show
+		transform: translate(-50%, -50%) scale(1)
+		opacity: 1
+		visibility: visible
+	&__title
+		// display: flex
+		// justify-content: center
+		// align-items: center
+		// flex-flow: column wrap
+		// height: 100%
+		// min-height: inherit
+	&__backdrop
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(#000, .6)
+		z-index: 11
+	&__close
+		position: absolute
+		right: 12px
+		top: 10px
+		font-size: 21px
+		color: $colorDark
+		cursor: pointer
+		transition: color .3s
+		&:hover
+			transition: color .3s
+			color: #a16363
+	&__content
+		padding: 33px 40px 25px 40px
+	&__form-list
+	&__form-label
+		display: block
+		margin-bottom: 15px
+	&__form-field
+	&__form-btn
+		margin-top: 40px
+		margin-bottom: 20px
+		text-align: center
+		font-size: 16px
+		>*
+			outline: none
+			border: none
+			background-color: $colorButton
+			padding: 15px 45px
+			border-radius: 10px
+			cursor: pointer
+	&__form-message
+		display: none
+		outline: none
+		resize: none
+		margin-left: 20px
+		width: 100%
+		height: 90px
+		border-radius: 10px
+		border-color: $colorFrame
+		padding: 10px
+		color: $colorTxt
+		&::placeholder
+			color: $colorTxt
+	&__txt
+		display: block
+		text-align: center
+		font-size: 10px
+		color: $colorTxt
+.hidden-modal
+	display: none
+
+
+//add To classes			
+.is-open
+	display: flex
+.no-open
+	display: none
+.btn-active
+	background-color: $colorSite
+	color: $colorBg2
+
+
+
+//Animations
+@keyframes opatityToTop
+	0%
+		opacity: 0
+		margin-top: -16%
+	100%
+		opacity: 1
+		margin-top: 0
+		
+				
+				
+				
+			
+
+				
+
+
+
+
+
+
+
+// @import "_media"

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Личный кабинет (Доставка)</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="sass/main.css">	
+</head>
+<body>
+	
+	
+	<div class="site-wrap">
+		<div class="page-delivery">
+			<div class="container">
+				<h1 class="page-delivery-title">Доставки</h1>
+				<div class="page-delivery-wrapper">
+					<div class="page-delivery-wrapper__selected-tabs">
+					<ul class="page-delivery-wrapper__tabs">
+						<li class="page-delivery-wrapper__tab active" data-tab-target>Активные</li>
+						<li class="page-delivery-wrapper__tab" data-tab-target>Завершенные</li>
+					</ul>
+					</div>
+					<div class="page-delivery-wrapper__main">
+						<div data-tab-content class="page-delivery-wrapper__main-active-delivery active">
+							<span id="no-prod-list"></span>
+							<ul class="page-delivery-wrapper__list">
+								<li class="page-delivery-wrapper__list-item">
+									<div class="page-delivery-wrapper__list-header">
+										<div class="page-delivery-wrapper__list-header-left">
+											<span class="page-delivery-wrapper__list-creation">Создана</span>
+											<div class="page-delivery-wrapper__list-number-order">
+												<input class="page-delivery-wrapper__list-number-field" type="text" value="#&nbsp;1000335921">
+												<button class="page-delivery-wrapper__list-btn-copy" data-target-copy></button>
+											</div>
+										</div>
+										<div class="page-delivery-wrapper__list-minutely" data-all-open>
+											<span>Подробности</span>
+										</div>
+									</div>
+									<div class="page-delivery-wrapper__list-shipping-number">
+										<div class="page-delivery-wrapper__list-lf">
+											<span class="page-delivery-wrapper__list-number-delivery">Доставка: 10 июля</span>
+											<span class="page-delivery-wrapper__list-delivery-whom">Курьером</span>
+										</div>
+										<div class="page-delivery-wrapper__list-cancel-delivery">
+											<span class="js-modal" data-modal="#modal_1">Отменить доставку</span>
+										</div>
+										
+										<div id="modal_1" class="modal-window">
+											<div class="modal-window__content">
+												<form class="modal-window__form-list">
+													<label class="modal-window__form-label">
+														<input class="modal-window__form-field" type="radio" value="Не устраивают сроки доставки">
+														Не устраивают сроки доставки
+													</label>
+													<label class="modal-window__form-label">
+														<input class="modal-window__form-field" type="radio" value="Купил в другом интернет-магазине">
+														Купил в другом интернет-магазине
+													</label>
+													<label class="modal-window__form-label">
+														<input class="modal-window__form-field" type="radio" value="Хочу внести изменения и оформить заново">
+														Хочу внести изменения и оформить заново
+													</label>
+													<label class="modal-window__form-label">
+														<input class="modal-window__form-field" type="radio" value="Не применилась скидка, сертификат или купон">
+														Не применилась скидка, сертификат или купон
+													</label>
+													<label class="modal-window__form-label">
+														<input class="modal-window__form-field" type="radio" value="Хочу изменить адрес доставки и оформить заново">
+														Хочу изменить адрес доставки и оформить заново
+													</label>
+													<label class="modal-window__form-label">
+														<input class="modal-window__form-field" type="radio" value="Не нашёл нужный вариант">
+														Не нашёл нужный вариант
+													</label>
+													<textarea placeholder="Укажите свой вариант" class="modal-window__form-message" cols="30" rows="10"></textarea>
+													<div class="modal-window__form-btn">
+														<input disabled type="button" id="one" value="Отменить доставку">
+													</div>
+												</form>
+												<span class="modal-window__txt">Как правило, деньги возвращаются на карту в течение 3-5 дней</span>
+											</div>
+											<span class="modal-close modal-window__close">&#10005;</span>
+										</div>
+									</div>
+									<div class="page-delivery-wrapper__list-slider">
+										<div class="swiper-container slider-list">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_4.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_5.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_5.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_5.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_5.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_5.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_5.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_5.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_5.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_5.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__list-slider-item">
+													<img src="img/delivered/prod/prod_5.png">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-button-prev swiper-button-prev-0"></div>
+										<div class="swiper-button-next swiper-button-next-1"></div>
+									</div>
+									<div class="page-delivery-wrapper__list-view-tile">
+										<div class="page-delivery-wrapper__list-view-goods">
+											<strong class="page-delivery-wrapper__list-view-rank">Состав: 4 товаров</strong>
+											<div class="page-delivery-wrapper__list-view-scroll">
+												<div class="page-delivery-wrapper__list-view-item">
+													<div class="page-delivery-wrapper__list-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__list-view-item--info">
+														<div class="page-delivery-wrapper__list-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__list-view-item--position">
+															<div class="page-delivery-wrapper__list-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__list-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__list-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__list-view-item--actions">
+														<div class="page-delivery-wrapper__list-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__list-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__list-view-item">
+													<div class="page-delivery-wrapper__list-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__list-view-item--info">
+														<div class="page-delivery-wrapper__list-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__list-view-item--position">
+															<div class="page-delivery-wrapper__list-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__list-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__list-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__list-view-item--actions">
+														<div class="page-delivery-wrapper__list-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__list-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__list-view-item">
+													<div class="page-delivery-wrapper__list-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__list-view-item--info">
+														<div class="page-delivery-wrapper__list-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__list-view-item--position">
+															<div class="page-delivery-wrapper__list-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__list-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__list-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__list-view-item--actions">
+														<div class="page-delivery-wrapper__list-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__list-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__list-view-item">
+													<div class="page-delivery-wrapper__list-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__list-view-item--info">
+														<div class="page-delivery-wrapper__list-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__list-view-item--position">
+															<div class="page-delivery-wrapper__list-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__list-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__list-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__list-view-item--actions">
+														<div class="page-delivery-wrapper__list-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__list-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__list-view-item">
+													<div class="page-delivery-wrapper__list-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__list-view-item--info">
+														<div class="page-delivery-wrapper__list-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__list-view-item--position">
+															<div class="page-delivery-wrapper__list-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__list-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__list-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__list-view-item--actions">
+														<div class="page-delivery-wrapper__list-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__list-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="page-delivery-wrapper__list-view-info">
+											<strong class="page-delivery-wrapper__list-view-rank">Данные доставки:</strong>
+											<div class="page-delivery-wrapper__list-view-info-content">
+												<div class="page-delivery-wrapper__list-view-info-top">
+													<div class="page-delivery-wrapper__list-view-info-wrp">Дата создания:
+														<span class="page-delivery-wrapper__list-view-info-text">1 июля 2022 г.</span>
+													</div>
+													<div class="page-delivery-wrapper__list-view-info-wrp">Адрес:
+														<span class="page-delivery-wrapper__list-view-info-text">Толе би, 159, 21</span>
+													</div>
+													<div class="page-delivery-wrapper__list-view-info-wrp">Метод оплаты:
+														<span class="page-delivery-wrapper__list-view-info-text">Картой онлайн</span>
+													</div>
+													<div class="page-delivery-wrapper__list-view-info-wrp">Имя:
+														<span class="page-delivery-wrapper__list-view-info-text">Александр</span>
+													</div>
+													<div class="page-delivery-wrapper__list-view-info-wrp">Телефон:
+														<span class="page-delivery-wrapper__list-view-info-text">+77055754791</span>
+													</div>
+													<div class="page-delivery-wrapper__list-view-info-wrp">Комментарий:
+														<span class="page-delivery-wrapper__list-view-info-text">
+															Hello! 🙂 Я Комментарий...
+														</span>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__list-view-info-bottom">
+													<ul class="page-delivery-wrapper__list-view-info-wrp2">
+														<li class="page-delivery-wrapper__list-view-info-bold">Товары
+															<span class="page-delivery-wrapper__list-view-info-numbers">126 340 ₸</span>
+														</li>
+														<li class="page-delivery-wrapper__list-view-info-bold">Скидка
+															<span class="page-delivery-wrapper__list-view-info-numbers numbers--green">-47 351Т / 37%</span>
+														</li>
+														<li class="page-delivery-wrapper__list-view-info-numbers">
+															<span>4 товара – 10.33 кг</span>
+														</li>
+														<li class="page-delivery-wrapper__list-view-info-bold info-bold-mt">Итого
+															<span class="page-delivery-wrapper__list-view-info-numbers">80 753 ₸</span>
+														</li>
+														<li class="page-delivery-wrapper__list-view-info-numbers">
+															<span>Бонусы за покупку</span>
+															<div class="page-delivery-wrapper__list-view-info-bonus">+ 807 Б</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="page-delivery-wrapper__ready">
+								<li class="page-delivery-wrapper__ready-item">
+									<div class="page-delivery-wrapper__ready-header">
+										<div class="page-delivery-wrapper__ready-header-left">
+											<span class="page-delivery-wrapper__ready-creation">Готова к получению</span>
+											<span class="page-delivery-wrapper__ready-period-storage">Срок хранения 5 дней</span>
+											<div class="page-delivery-wrapper__ready-number-order">
+												<input class="page-delivery-wrapper__ready-number-field" type="text" value="#&nbsp;1000335929">
+												<button class="page-delivery-wrapper__ready-btn-copy" data-target-copy></button>
+											</div>
+										</div>
+										<div class="page-delivery-wrapper__ready-minutely" data-all-open>
+											<span>Подробности</span>
+										</div>
+									</div>
+									<div class="page-delivery-wrapper__ready-shipping-number">
+										<div class="page-delivery-wrapper__ready-lf">
+											<span class="page-delivery-wrapper__ready-number-delivery">Доставка: 10 июля</span>
+											<span class="page-delivery-wrapper__ready-point-issue">В пункт выдачи</span>
+										</div>
+										<div class="page-delivery-wrapper__ready-period">
+											<span>Продлить срок хранения</span>
+										</div>
+									</div>
+									<div class="page-delivery-wrapper__ready-slider">
+										<div class="swiper-container ready-slider">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+												<div class="swiper-slide page-delivery-wrapper__ready-slider-item">
+													<img src="img/delivered/prod/prod_3.png">
+												</div>
+											</div>
+											<div class="swiper-button-prev swiper-button-prev-2"></div>
+											<div class="swiper-button-next swiper-button-next-3"></div>
+										</div>
+									</div>
+									<div class="page-delivery-wrapper__ready-view-tile">
+										<div class="page-delivery-wrapper__ready-view-goods">
+											<strong class="page-delivery-wrapper__ready-view-rank">Состав: 4 товаров</strong>
+											<div class="page-delivery-wrapper__ready-view-scroll">
+												<div class="page-delivery-wrapper__ready-view-item">
+													<div class="page-delivery-wrapper__ready-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__ready-view-item--info">
+														<div class="page-delivery-wrapper__ready-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__ready-view-item--position">
+															<div class="page-delivery-wrapper__ready-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__ready-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__ready-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__ready-view-item--actions">
+														<div class="page-delivery-wrapper__ready-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__ready-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__ready-view-item">
+													<div class="page-delivery-wrapper__ready-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__ready-view-item--info">
+														<div class="page-delivery-wrapper__ready-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__ready-view-item--position">
+															<div class="page-delivery-wrapper__ready-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__ready-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__ready-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__ready-view-item--actions">
+														<div class="page-delivery-wrapper__ready-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__ready-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__ready-view-item">
+													<div class="page-delivery-wrapper__ready-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__ready-view-item--info">
+														<div class="page-delivery-wrapper__ready-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__ready-view-item--position">
+															<div class="page-delivery-wrapper__ready-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__ready-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__ready-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__ready-view-item--actions">
+														<div class="page-delivery-wrapper__ready-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__ready-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__ready-view-item">
+													<div class="page-delivery-wrapper__ready-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__ready-view-item--info">
+														<div class="page-delivery-wrapper__ready-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__ready-view-item--position">
+															<div class="page-delivery-wrapper__ready-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__ready-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__ready-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__ready-view-item--actions">
+														<div class="page-delivery-wrapper__ready-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__ready-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__ready-view-item">
+													<div class="page-delivery-wrapper__ready-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__ready-view-item--info">
+														<div class="page-delivery-wrapper__ready-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__ready-view-item--position">
+															<div class="page-delivery-wrapper__ready-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__ready-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__ready-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__ready-view-item--actions">
+														<div class="page-delivery-wrapper__ready-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__ready-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="page-delivery-wrapper__ready-view-info">
+											<strong class="page-delivery-wrapper__ready-view-rank">Данные доставки:</strong>
+											<div class="page-delivery-wrapper__ready-view-info-content">
+												<div class="page-delivery-wrapper__ready-view-info-top">
+													<div class="page-delivery-wrapper__ready-view-info-wrp">Дата создания:
+														<span class="page-delivery-wrapper__ready-view-info-text">1 июля 2022 г.</span>
+													</div>
+													<div class="page-delivery-wrapper__ready-view-info-wrp">Адрес:
+														<span class="page-delivery-wrapper__ready-view-info-text">Толе би, 159, 21</span>
+													</div>
+													<div class="page-delivery-wrapper__ready-view-info-wrp">Метод оплаты:
+														<span class="page-delivery-wrapper__ready-view-info-text">Картой онлайн</span>
+													</div>
+													<div class="page-delivery-wrapper__ready-view-info-wrp">Имя:
+														<span class="page-delivery-wrapper__ready-view-info-text">Александр</span>
+													</div>
+													<div class="page-delivery-wrapper__ready-view-info-wrp">Телефон:
+														<span class="page-delivery-wrapper__ready-view-info-text">+77055754791</span>
+													</div>
+													<div class="page-delivery-wrapper__ready-view-info-wrp">Комментарий:
+														<span class="page-delivery-wrapper__ready-view-info-text">
+															Hello! 🙂 Я Комментарий...
+														</span>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__ready-view-info-bottom">
+													<ul class="page-delivery-wrapper__ready-view-info-wrp2">
+														<li class="page-delivery-wrapper__ready-view-info-bold">Товары
+															<span class="page-delivery-wrapper__ready-view-info-numbers">126 340 ₸</span>
+														</li>
+														<li class="page-delivery-wrapper__ready-view-info-bold">Скидка
+															<span class="page-delivery-wrapper__ready-view-info-numbers numbers--green">-47 351Т / 37%</span>
+														</li>
+														<li class="page-delivery-wrapper__ready-view-info-numbers">
+															<span>4 товара – 10.33 кг</span>
+														</li>
+														<li class="page-delivery-wrapper__ready-view-info-bold info-bold-mt">Итого
+															<span class="page-delivery-wrapper__ready-view-info-numbers">80 753 ₸</span>
+														</li>
+														<li class="page-delivery-wrapper__ready-view-info-numbers">
+															<span>Бонусы за покупку</span>
+															<div class="page-delivery-wrapper__ready-view-info-bonus">+ 807 Б</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div data-tab-content class="page-delivery-wrapper__main-complited-delivery">
+							<span id="no-prod-accomplished"></span>
+							<ul class="page-delivery-wrapper__list-accomplished">
+								<li class="page-delivery-wrapper__list-accomplished-item">
+									<div class="page-delivery-wrapper__list-accomplished-header">
+										<div class="page-delivery-wrapper__list-accomplished-header-left">
+											<span class="page-delivery-wrapper__list-accomplished-creation">Получена</span>
+											<div class="page-delivery-wrapper__list-accomplished-number-order">
+												<input class="page-delivery-wrapper__list-accomplished-number-field" type="text" value="#&nbsp;1000335932">
+												<button class="page-delivery-wrapper__list-accomplished-btn-copy" data-target-copy></button>
+											</div>
+										</div>
+										<div class="page-delivery-wrapper__list-accomplished-minutely" data-all-open>
+											<span>Подробности</span>
+										</div>
+									</div>
+									<div class="page-delivery-wrapper__list-accomplished-shipping-number">
+										<div class="page-delivery-wrapper__list-accomplished-lf">
+											<span class="page-delivery-wrapper__list-accomplished-number-delivery">Получена: 12 мая</span>
+											<span class="page-delivery-wrapper__list-accomplished-delivery-whom">Курьером</span>
+										</div>
+										<div class="page-delivery-wrapper__list-accomplished-actions">
+											<div class="page-delivery-wrapper__list-accomplished-repeat-delivery">
+												<span>Повторить доставку</span>
+											</div>
+											<div class="page-delivery-wrapper__list-accomplished-check-delivery">
+												<span>Электронный чек</span>
+											</div>
+										</div>
+									</div>
+									<div class="page-delivery-wrapper__list-accomplished-slider">
+										<div class="swiper-container list-accomplished">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+													<div class="swiper-slide page-delivery-wrapper__list-accomplished-slider-item">
+														<img src="img/delivered/prod/prod_3.png">
+													</div>
+												</div>	
+											<div class="swiper-button-prev swiper-button-prev-4"></div>
+											<div class="swiper-button-next swiper-button-next-5"></div>
+										</div>
+									</div>
+									<div class="page-delivery-wrapper__list-accomplished-view-tile">
+										<div class="page-delivery-wrapper__list-accomplished-view-goods">
+											<strong class="page-delivery-wrapper__list-accomplished-view-rank">Состав: 4 товаров</strong>
+											<div class="page-delivery-wrapper__list-accomplished-view-scroll">
+												<div class="page-delivery-wrapper__list-accomplished-view-item">
+													<div class="page-delivery-wrapper__list-accomplished-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-item--info">
+														<div class="page-delivery-wrapper__list-accomplished-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__list-accomplished-view-item--position">
+															<div class="page-delivery-wrapper__list-accomplished-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__list-accomplished-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__list-accomplished-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-item--actions">
+														<div class="page-delivery-wrapper__list-accomplished-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__list-accomplished-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__list-accomplished-view-item">
+													<div class="page-delivery-wrapper__list-accomplished-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-item--info">
+														<div class="page-delivery-wrapper__list-accomplished-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__list-accomplished-view-item--position">
+															<div class="page-delivery-wrapper__list-accomplished-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__list-accomplished-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__list-accomplished-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-item--actions">
+														<div class="page-delivery-wrapper__list-accomplished-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__list-accomplished-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__list-accomplished-view-item">
+													<div class="page-delivery-wrapper__list-accomplished-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-item--info">
+														<div class="page-delivery-wrapper__list-accomplished-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__list-accomplished-view-item--position">
+															<div class="page-delivery-wrapper__list-accomplished-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__list-accomplished-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__list-accomplished-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-item--actions">
+														<div class="page-delivery-wrapper__list-accomplished-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__list-accomplished-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__list-accomplished-view-item">
+													<div class="page-delivery-wrapper__list-accomplished-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-item--info">
+														<div class="page-delivery-wrapper__list-accomplished-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__list-accomplished-view-item--position">
+															<div class="page-delivery-wrapper__list-accomplished-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__list-accomplished-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__list-accomplished-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-item--actions">
+														<div class="page-delivery-wrapper__list-accomplished-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__list-accomplished-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__list-accomplished-view-item">
+													<div class="page-delivery-wrapper__list-accomplished-view-item--img">
+														<img src="img/delivered/goods/good_1.png">
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-item--info">
+														<div class="page-delivery-wrapper__list-accomplished-view-item--title">Икабог | Роулинг Дж.К.</div>
+														<div class="page-delivery-wrapper__list-accomplished-view-item--position">
+															<div class="page-delivery-wrapper__list-accomplished-view-item--discount">17 250 ₸</div>
+															<div class="page-delivery-wrapper__list-accomplished-view-item--price">5 920 ₸</div>
+															<div class="page-delivery-wrapper__list-accomplished-view-item--bonus active-bonus">+111 бонусов за покупку</div>
+														</div>
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-item--actions">
+														<div class="page-delivery-wrapper__list-accomplished-view-item--title">💗</div>
+														<div class="page-delivery-wrapper__list-accomplished-view-item--position-basket">
+															🗑
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="page-delivery-wrapper__list-accomplished-view-info">
+											<strong class="page-delivery-wrapper__list-accomplished-view-rank">Данные доставки:</strong>
+											<div class="page-delivery-wrapper__list-accomplished-view-info-content">
+												<div class="page-delivery-wrapper__list-accomplished-view-info-top">
+													<div class="page-delivery-wrapper__list-accomplished-view-info-wrp">Дата создания:
+														<span class="page-delivery-wrapper__list-accomplished-view-info-text">1 июля 2022 г.</span>
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-info-wrp">Адрес:
+														<span class="page-delivery-wrapper__list-accomplished-view-info-text">Толе би, 159, 21</span>
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-info-wrp">Метод оплаты:
+														<span class="page-delivery-wrapper__list-accomplished-view-info-text">Картой онлайн</span>
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-info-wrp">Имя:
+														<span class="page-delivery-wrapper__list-accomplished-view-info-text">Александр</span>
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-info-wrp">Телефон:
+														<span class="page-delivery-wrapper__list-accomplished-view-info-text">+77055754791</span>
+													</div>
+													<div class="page-delivery-wrapper__list-accomplished-view-info-wrp">Комментарий:
+														<span class="page-delivery-wrapper__list-accomplished-view-info-text">
+															Hello! 🙂 Я Комментарий...
+														</span>
+													</div>
+												</div>
+												<div class="page-delivery-wrapper__list-accomplished-view-info-bottom">
+													<ul class="page-delivery-wrapper__list-accomplished-view-info-wrp2">
+														<li class="page-delivery-wrapper__list-accomplished-view-info-bold">Товары
+															<span class="page-delivery-wrapper__list-accomplished-view-info-numbers">126 340 ₸</span>
+														</li>
+														<li class="page-delivery-wrapper__list-accomplished-view-info-bold">Скидка
+															<span class="page-delivery-wrapper__list-accomplished-view-info-numbers numbers--green">-47 351Т / 37%</span>
+														</li>
+														<li class="page-delivery-wrapper__list-accomplished-view-info-numbers">
+															<span>4 товара – 10.33 кг</span>
+														</li>
+														<li class="page-delivery-wrapper__list-accomplished-view-info-bold info-bold-mt">Итого
+															<span class="page-delivery-wrapper__list-accomplished-view-info-numbers">80 753 ₸</span>
+														</li>
+														<li class="page-delivery-wrapper__list-accomplished-view-info-numbers">
+															<span>Бонусы за покупку</span>
+															<div class="page-delivery-wrapper__list-accomplished-view-info-bonus">+ 807 Б</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	 
+	<!-- <div class="wrap-center-middle"> -->
+		<!-- <div type="button" class="js-modal" data-modal="#modal_1">Открыть</div> -->
+		<!-- <div type="button" class="js-modal" data-modal="#modal_2">Открыть другое окно</div> -->
+	<!-- </div> -->
+	  
+	  <!-- /.wrap-center-middle -->
+	
+	  <!-- <div id="modal_1" class="modal-window">
+		<div class="modal-window__title">
+		  <h3>Привет!</h3>
+		  <a href="#" class="modal-close">Закрыть</a>
+		</div>
+	  </div> -->
+	  <!-- /#modal_1 -->
+<!-- 	
+	  <div id="modal_2" class="modal-window">
+		<div class="modal-window__title">
+		  <h3>Как дела?</h3>
+		  <a href="#" class="modal-close">Закрыть</a>
+		</div>
+	  </div> -->
+	  
+	  <div class="modal-window__backdrop hidden-modal" id="modal-backdrop"></div>
+	 <!-- /#modal_2  -->
+
+	
+
+
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+
+	
+
+</body>
+</html>
